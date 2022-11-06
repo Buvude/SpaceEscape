@@ -20,6 +20,7 @@ public class HandController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        /*surfactGripTarget *= -1;*/
         inputManager.actionAssets[0].FindActionMap("XRI LeftHand Interaction").actionTriggered += OnInput;
         inputManager.actionAssets[0].FindActionMap("XRI RightHand Interaction").actionTriggered += OnInput; //This makes it so both left and right hand are calling the same function... may need to change later
        /* for(int i = 0; i<7; i++)
@@ -45,8 +46,8 @@ public class HandController : MonoBehaviour
             targetOriginPos += surfactGripTarget - offsetTargetPos;
 
             targetOriginPos = Vector3.Lerp(currentOriginPos, targetOriginPos, gripMoveLerpRate * Time.deltaTime);
-            
-            
+
+
             //Cleanup
             /*lastOriginVelocity = targetOriginPos - currentOriginPos;*/   //Record velocity
             VRPlayerOrigin.transform.position = targetOriginPos; //Apply positional change
