@@ -2,3 +2,6 @@
 *.dwlt
 Space Escape/Assets/XR/Settings/OpenXR Package Settings.asset
 *.dwlt
+Space Escape/Assets/XR/Settings/OpenXR Package Settings.asset
+*.dwlt
+Space Escape/UserSettings/EditorUserSettings.asset
