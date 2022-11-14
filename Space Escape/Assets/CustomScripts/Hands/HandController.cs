@@ -38,14 +38,13 @@ public class HandController : MonoBehaviour
     void Update()
     {
         
-        Vector3 offsetTargetPos = controllerTarget.position + controllerTarget.TransformVector(followOffset);                              //Get actual target position to seek (ALWAYS home toward this, not controllerTarget)
+                                   //Get actual target position to seek (ALWAYS home toward this, not controllerTarget)
         if (grabbing)
         {
-            Vector3 currentOriginPos = VRPlayerOrigin.transform.position;
-            Vector3 targetOriginPos = currentOriginPos;
-            targetOriginPos += surfactGripTarget - offsetTargetPos;
+            Vector3 targetOriginPos = VRPlayerOrigin.transform.position; 
+            targetOriginPos += surfactGripTarget-transform.position;
 
-            targetOriginPos = Vector3.Lerp(currentOriginPos, targetOriginPos, gripMoveLerpRate * Time.deltaTime);
+            /*targetOriginPos = Vector3.Lerp(currentOriginPos, targetOriginPos, gripMoveLerpRate * Time.deltaTime);*/
 
 
             //Cleanup
@@ -72,6 +71,7 @@ public class HandController : MonoBehaviour
                 Debug.Log("Grabbed");
                 /*StartCoroutine("LeftHandLocomotion");*/
                 grabbing = true;
+                surfactGripTarget = transform.position;
             }
         }
         if (context.canceled)
