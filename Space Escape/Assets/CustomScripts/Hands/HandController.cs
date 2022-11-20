@@ -60,7 +60,7 @@ public class HandController : MonoBehaviour
     {
         if (context.action.name == "Grab") OnGrab(context);
 
-        
+
     }
     public void OnGrab(InputAction.CallbackContext context)
     {
