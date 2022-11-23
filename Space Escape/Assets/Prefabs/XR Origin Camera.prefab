@@ -621,14 +621,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.1
-  CollisionLayers:
+  CollisionLayersLocomotion:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   inputManager: {fileID: 4611660207672244376}
   VRPlayerOrigin: {fileID: 4611660206984174916}
   controllerTarget: {fileID: 4611660206190137867}
   followOffset: {x: 0, y: 0, z: 0}
   gripMoveLerpRate: 1
+  hD: {fileID: 0}
 --- !u!1 &4611660206396410419
 GameObject:
   m_ObjectHideFlags: 0
@@ -1152,14 +1153,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.1
-  CollisionLayers:
+  CollisionLayersLocomotion:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   inputManager: {fileID: 4611660207672244376}
   VRPlayerOrigin: {fileID: 4611660206984174916}
   controllerTarget: {fileID: 4611660206396410420}
   followOffset: {x: 0, y: 0, z: 0}
   gripMoveLerpRate: 1
+  hD: {fileID: 0}
 --- !u!1 &4611660206665114089
 GameObject:
   m_ObjectHideFlags: 0
@@ -1478,7 +1480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 4611660206984174936}
-  m_MoveSpeed: 1
+  m_MoveSpeed: 10
   m_EnableStrafe: 1
   m_UseGravity: 1
   m_GravityApplicationMode: 0
@@ -1596,6 +1598,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4611660207672244377}
   - component: {fileID: 4611660207672244376}
+  - component: {fileID: 6162827216510422762}
   m_Layer: 0
   m_Name: input manager
   m_TagString: Untagged
@@ -1632,6 +1635,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ActionAssets:
   - {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+--- !u!114 &6162827216510422762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4611660207672244359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fcd3b01406b3843afaabe7ddfbbfe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightHandController: {fileID: 4611660206396410313}
+  leftHandController: {fileID: 4611660206190137856}
 --- !u!1 &4611660207699457953
 GameObject:
   m_ObjectHideFlags: 0
@@ -1641,7 +1658,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4611660207699457954}
-  - component: {fileID: 4351613730226875674}
   m_Layer: 0
   m_Name: Camera Offset
   m_TagString: Untagged
@@ -1667,17 +1683,3 @@ Transform:
   m_Father: {fileID: 4611660206984174940}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4351613730226875674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4611660207699457953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2fcd3b01406b3843afaabe7ddfbbfe0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rightHandController: {fileID: 4611660206396410313}
-  leftHandController: {fileID: 4611660206190137856}
