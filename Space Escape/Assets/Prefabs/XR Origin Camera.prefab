@@ -108,6 +108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 327086128367114136}
   - component: {fileID: 8909601442708745535}
+  - component: {fileID: 4477502883025222251}
   m_Layer: 0
   m_Name: HitBox
   m_TagString: Untagged
@@ -144,6 +145,18 @@ CapsuleCollider:
   m_Height: 1.9587461
   m_Direction: 1
   m_Center: {x: 0, y: -0.47937304, z: 0}
+--- !u!114 &4477502883025222251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4460970582882254018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0710d18c9f01a549b48cdc943a172bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4611660206190137866
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,6 +172,7 @@ GameObject:
   - component: {fileID: 4611660206190137869}
   - component: {fileID: 4611660206190137868}
   - component: {fileID: 4611660206190137856}
+  - component: {fileID: 3574927807564807925}
   m_Layer: 0
   m_Name: LeftHand Controller
   m_TagString: Untagged
@@ -700,6 +714,18 @@ MonoBehaviour:
   followOffset: {x: 0, y: 0, z: 0}
   gripMoveLerpRate: 1
   hD: {fileID: 0}
+--- !u!114 &3574927807564807925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4611660206190137866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0710d18c9f01a549b48cdc943a172bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4611660206396410419
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,6 +741,7 @@ GameObject:
   - component: {fileID: 4611660206396410422}
   - component: {fileID: 4611660206396410421}
   - component: {fileID: 4611660206396410313}
+  - component: {fileID: 4175040066241403952}
   m_Layer: 0
   m_Name: RightHand Controller
   m_TagString: Untagged
@@ -1256,6 +1283,18 @@ MonoBehaviour:
   followOffset: {x: 0, y: 0, z: 0}
   gripMoveLerpRate: 1
   hD: {fileID: 0}
+--- !u!114 &4175040066241403952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4611660206396410419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0710d18c9f01a549b48cdc943a172bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4611660206665114089
 GameObject:
   m_ObjectHideFlags: 0
@@ -1498,6 +1537,7 @@ Transform:
   - {fileID: 4611660206665114091}
   - {fileID: 3615142870619447231}
   - {fileID: 327086128367114136}
+  - {fileID: 2559280409267475985}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1777,6 +1817,37 @@ Transform:
   - {fileID: 4611660206396410420}
   m_Father: {fileID: 4611660206984174940}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5172355113376923455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2559280409267475985}
+  m_Layer: 0
+  m_Name: Respawn1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2559280409267475985
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5172355113376923455}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4611660206984174940}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &6459813877277890316
 PrefabInstance:
