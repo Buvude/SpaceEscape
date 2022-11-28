@@ -78,7 +78,6 @@ public class HandController : MonoBehaviour
             {
                 Debug.Log("Grabbed");
                 /*StartCoroutine("LeftHandLocomotion");*/
-                grabbing = true;
                 surfactGripTarget = transform.position;
                 if (Right)
                 {
