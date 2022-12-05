@@ -7,6 +7,7 @@ using UnityEngine.XR.Interaction.Toolkit.Inputs;
 
 public class HandControllerRedo : MonoBehaviour
 {
+    public static  List<HandControllerRedo> handList= new List<HandControllerRedo>();
     private HandControllerRedo otherHand;
     public bool rightHand;
     public float radius = .1f;
@@ -19,7 +20,10 @@ public class HandControllerRedo : MonoBehaviour
     public float gripMoveLerpRate;
     public HandDismissal hD;
 
-
+    private void Awake()
+    {
+        handList.Add(this);
+    }
     // Start is called before the first frame update
     void Start()
     {

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EventExecuter : MonoBehaviour
 {
+    
     public GameObject Player;
     public Transform respawn1;
     // Start is called before the first frame update
@@ -21,6 +22,10 @@ public class EventExecuter : MonoBehaviour
     public void DeathRespawn1()
     {
         Debug.Log("You are dead");
+        foreach (HandControllerRedo hand in HandControllerRedo.handList)
+        {
+            hand.grabbing = false;
+        }
         Player.transform.position = respawn1.position;
     }
 }
