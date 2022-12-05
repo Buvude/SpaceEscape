@@ -5,6 +5,7 @@ using UnityEngine;
 public class EventTriggerers : MonoBehaviour
 {
     public EventExecuter EE;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,9 +17,10 @@ public class EventTriggerers : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    public void OnTriggerEnter(Collider other)
     {
-        if(collision.gameObject.layer.ToString() == "Death")
+        print(other.gameObject.layer+"trigger");
+        if (other.gameObject.layer == 9)
         {
             EE.DeathRespawn1();
         }
