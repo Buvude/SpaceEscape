@@ -20,6 +20,7 @@ public class EventExecuter : MonoBehaviour
 
     public void DeathRespawn1()
     {
+        Debug.Log("You are dead");
         Player.transform.position = respawn1.position;
     }
 }
